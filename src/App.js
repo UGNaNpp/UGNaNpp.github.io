@@ -1,10 +1,13 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React from "react"
+import {React, useEffect} from "react"
 
 import MainPage from './components/MainPage/MainPage';
 
 function App() {
+  useEffect(() => {
+    document.title = 'UG NaN++';
+  }, []);
   return (
     <div className="App">
       <BrowserRouter>
