@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import background1 from "./images/background1.png";
 import background2 from "./images/background2.png";
 import background3 from "./images/background3.png";
@@ -9,6 +10,7 @@ import note_master from "./images/note_master.png";
 import NavHeader from "./NavHeader";
 
 export default function MainPage() {
+  const navigate = useNavigate();
   return (
     <>
       <NavHeader/>
@@ -61,12 +63,10 @@ export default function MainPage() {
         <section className="main-section">
           <h2 className="section-title">Projekty w trakcie realizacji</h2>
           <ul className="project-list">
-            <li className="project-item">
-              <a href="projekty/trener-nut.html">
-                <img src={note_master} alt="Trener nut" className="project-img"></img>
-                <h3>Trener nut</h3>
-              </a>
-            </li>
+          <li className="project-item" onClick={() => navigate("/projects/trener-nut")}>
+              <img src={note_master} alt="Trener nut" className="project-img" />
+              <h3>Trener nut</h3>
+          </li>
             <li className="project-item">
               <a href="projekty/gra-karciana.html">
                 <img src={gra_karciana} alt="Gra karciana" className="project-img"></img>

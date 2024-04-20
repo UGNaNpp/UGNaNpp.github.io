@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {React, useEffect} from "react"
 
 import MainPage from './components/MainPage/MainPage';
+import NoteMaster from './components/MainPage/Projects/trener-nut';
 
 function App() {
   useEffect(() => {
@@ -15,6 +16,10 @@ function App() {
           <Route
             path="/"
             element={<MainPage/>}
+          ></Route>
+          <Route
+            path="/projects/trener-nut"
+            element={<NoteMaster/>}
           ></Route>
 
           
