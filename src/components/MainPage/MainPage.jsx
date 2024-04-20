@@ -68,17 +68,14 @@ export default function MainPage() {
               <h3>Trener nut</h3>
           </li>
             <li className="project-item">
-              <a href="projekty/gra-karciana.html">
                 <img src={gra_karciana} alt="Gra karciana" className="project-img"></img>
                 <h3>Gra karciana</h3>
-              </a>
             </li>
-            <li className="project-item">
-              <a href="projekty/neunet1.html">
+            <li className="project-item" onClick={()=> {navigate("/projects/neunet1")}}>
                 <img src={neunet1} alt="Sieć neuronowa 1" className="project-img"></img>
                 <h3>Sieć neuronowa rozpoznająca gatunki muzyki</h3>
-              </a>
             </li>
+            
           </ul>
         </section>
       </main>

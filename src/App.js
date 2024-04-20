@@ -4,6 +4,7 @@ import {React, useEffect} from "react"
 
 import MainPage from './components/MainPage/MainPage';
 import NoteMaster from './components/MainPage/Projects/trener-nut';
+import Neunet1 from './components/MainPage/Projects/Neunet1';
 
 function App() {
   useEffect(() => {
@@ -20,6 +21,10 @@ function App() {
           <Route
             path="/projects/trener-nut"
             element={<NoteMaster/>}
+          ></Route>
+          <Route
+            path="/projects/neunet1"
+            element={<Neunet1/>}
           ></Route>
 
           

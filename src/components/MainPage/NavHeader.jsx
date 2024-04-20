@@ -1,11 +1,13 @@
 import React from 'react';
 import logo_eve from "./images/logo-eve.gif";
+import { useNavigate } from 'react-router-dom';
 
 export default function NavHeader() {
+  const navigate = useNavigate();
   return (
     <header className="main-header">
     <div className="left-side">
-      <a href="index.html"><img src={logo_eve} className="logo" alt="Logo"></img></a>
+      <img src={logo_eve} className="logo" alt="Logo" onClick={() =>{navigate("/")}}></img>
       <h1 className="header-title">Koło Naukowe <span className="header-name">NaN++</span></h1>
     </div>
     <nav className="right-side">
