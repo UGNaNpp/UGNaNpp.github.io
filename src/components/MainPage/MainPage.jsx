@@ -1,31 +1,17 @@
 import React from "react";
-import logo_eve from "./images/logo-eve.gif";
 import background1 from "./images/background1.png";
 import background2 from "./images/background2.png";
 import background3 from "./images/background3.png";
 import background4 from "./images/background4.png";
-// import dron from "./images/dron.png";
 import gra_karciana from "./images/gra-karciana.png";
-// import icon from "./images/icon.png";
 import neunet1 from "./images/neunet1.png";
 import note_master from "./images/note_master.png";
+import NavHeader from "./NavHeader";
 
 export default function MainPage() {
   return (
     <>
-      <header className="main-header">
-        <div className="left-side">
-          <a href="index.html"><img src={logo_eve} className="logo" alt="Logo"></img></a>
-          <h1 className="header-title">Koło Naukowe <span className="header-name">NaN++</span></h1>
-        </div>
-        <nav className="right-side">
-          <a href="w_budowie.html">Aktualności</a>
-          <a href="https://inf.ug.edu.pl/~piotao/">Opiekun</a>
-          <a href="w_budowie.html">O Kole</a>
-          <a href="projects.html">Zrealizowane projekty</a>
-          <a href="note_master/index.html" className="rainbow-text">Sekcja artystyczna Koła 🎸</a>
-        </nav>
-      </header>
+      <NavHeader/>
 
       <main>
         <nav className="left-background">
