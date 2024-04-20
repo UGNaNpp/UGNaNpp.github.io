@@ -1,12 +1,12 @@
 import React from "react";
-import logo_eve from "./images/logo-eve.png";
+import logo_eve from "./images/logo-eve.gif";
 import background1 from "./images/background1.png";
 import background2 from "./images/background2.png";
 import background3 from "./images/background3.png";
 import background4 from "./images/background4.png";
-import dron from "./images/dron.png";
+// import dron from "./images/dron.png";
 import gra_karciana from "./images/gra-karciana.png";
-import icon from "./images/icon.png";
+// import icon from "./images/icon.png";
 import neunet1 from "./images/neunet1.png";
 import note_master from "./images/note_master.png";
 
