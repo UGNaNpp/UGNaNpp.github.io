@@ -1,6 +1,7 @@
 import React from "react";
 import NavHeader from "../NavHeader";
 import neunet1 from "./../images/neunet1.png";
+import "./projects.css"
 
 export default function Neunet1() {
   return (

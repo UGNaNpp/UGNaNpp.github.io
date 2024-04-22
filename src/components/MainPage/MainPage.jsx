@@ -67,7 +67,7 @@ export default function MainPage() {
               <img src={note_master} alt="Trener nut" className="project-img" />
               <h3>Trener nut</h3>
           </li>
-            <li className="project-item">
+            <li className="project-item" onClick={()=>{navigate("/projects/gra_karciana")}}>
                 <img src={gra_karciana} alt="Gra karciana" className="project-img"></img>
                 <h3>Gra karciana</h3>
             </li>
